@@ -6,14 +6,13 @@ A NeoForge mod that adds eating/drinking animations to Minecraft items.
 Fring
 
 ## Version
-1.0.4
+1.3.0
 
 ## Minecraft Compatibility
 26.1, 26.1.1, 26.1.2
 
 ## Requirements
 - Minecraft 26.1+
-- NeoForge 21.6+
 - Java 25
 
 ## License
