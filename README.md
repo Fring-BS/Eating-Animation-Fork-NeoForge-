@@ -3,9 +3,8 @@
 A mod that adds eating animations to Minecraft items. NeoForge fork.
 
 ## Version Info
-- Minecraft: 1.21.11+
-- NeoForge: 21.11.0+
-- Mod Version: 1.0.3
+- Minecraft: 1.21.11
+- Mod Version: 1.1.0
 
 ## Building
 Requires Gradle. Run `gradle build` to compile.
