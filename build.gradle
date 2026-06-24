@@ -1,0 +1,34 @@
+plugins {
+    id 'java'
+    id 'net.neoforged.moddev' version '2.0.28-beta'
+}
+
+version = mod_version
+group = mod_id
+archivesBaseName = 'NeoForge-EatingAnimationFork-26.1'
+
+sourceCompatibility = targetCompatibility = JavaLanguageVersion.of(25)
+
+dependencies {
+    implementation 'net.neoforged:neoforged:' + neo_version
+}
+
+minecraft {
+    version = minecraft_version
+}
+
+jar {
+    manifest {
+        attributes([
+            "Specification-Title"     : mod_id,
+            "Specification-Vendor"    : mod_author,
+            "Specification-Version"   : "1",
+            "Implementation-Title"    : project.name,
+            "Implementation-Version"  : project.jar.archiveVersion,
+            "Implementation-Vendor"   : mod_author,
+            "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")
+        ])
+    }
+}
+
+jar.finalizedBy('reobfJar')
